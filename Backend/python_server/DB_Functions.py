@@ -1,33 +1,23 @@
-from pymongo import MongoClient
 # pprint library is used to make the output look more pretty
 from pprint import pprint
-from Backend.python_server.DB_Connection import DB_Connection
+from Backend.python_server import DB_Connection
+import logging
+from flask import Flask
 
 class DB_Connector:
 
 
-    def main(self):
-        conn = DB_Connection().client
-
-
-        # Issue the serverStatus command and print the results
-        serverStatusResult = conn.admin.command("serverStatus")
-        pprint(serverStatusResult)
-
-
-        self.add_new_student(1, 'John', 'Smith', 'jsmith@umd.edu', 'jsmith01', 'disco1', conn)
-
     # def main(self):
-    #     # connect to MongoDB, change the <password> to reflect your own password
-    #     client = MongoClient(
-    #         "mongodb+srv://<username>:<password>@cluster0-blmvj.gcp.mongodb.net/test?retryWrites=true&w=majority")[]
+    #     conn = DB_Connection().client
+    #
     #
     #     # Issue the serverStatus command and print the results
-    #     serverStatusResult = client.admin.command("serverStatus")
+    #     serverStatusResult = conn.admin.command("serverStatus")
     #     pprint(serverStatusResult)
     #
     #
-    #     self.add_new_student(1, 'John', 'Smith', 'jsmith@umd.edu', 'jsmith01', 'disco1', client)
+    #     self.add_new_student(1, 'John', 'Smith', 'jsmith@umd.edu', 'jsmith01', 'disco1', conn)
+
 
 
     # NEW ACCOUNTS
