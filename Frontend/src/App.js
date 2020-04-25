@@ -5,6 +5,7 @@ import Home from './Pages/Home'
 import Register from './Pages/Register'
 import './App.css';
 import Dashboard from './Pages/Dashboard';
+import NotFound from './Pages/NotFound';
 
 const App = ({location}) => { 
   const currentKey = location.pathname.split('/')[1] || '/'
@@ -20,6 +21,7 @@ const App = ({location}) => {
           <Route exact path='/' component={Home} />
           <Route exact path='/register' component={Register}/>
           <Route exact path='/dashboard' component={Dashboard}/>
+          <Route component={NotFound}/>
         </Switch>
         </section>
         </CSSTransition>
