@@ -14,11 +14,11 @@ class Home extends Component {
                <h3>The Active Learning Platform for Remote Classrooms.</h3>
                <hr className="top-line"></hr>
                <p className="lead">
-               Recreate the same engaging experience even when you teach online. See how Top Hat is helping educators deliver 
+               Recreate the same engaging experience even when you teach online. See how EduSpace is helping educators deliver 
                interactive course content and assessments remotely, ensuring students stay engaged in learning.
                </p>
                <br></br>
-               <button id="pink-button" className="btn btn-outline-primary">Sign Up</button>
+               <a id="pink-button" className="btn btn-outline-primary" href="/register">Sign Up</a>
            </div>
           <div className="container">
           <div className="row">

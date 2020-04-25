@@ -31,7 +31,7 @@ import './Navbar.css'
                   </ul>
 
               </nav>
-              <Modal isOpen={this.state.showLoginModal} toggle={this.toggleLoginModal} size="sm" centered={true}>
+              <Modal isOpen={this.state.showLoginModal} toggle={this.toggleLoginModal} size="md" centered={true}>
               <ModalHeader toggle={this.toggle}><div className="loginModal">Sign In</div></ModalHeader>
               <ModalBody >
               <div className="form-label-group"> 
@@ -47,7 +47,7 @@ import './Navbar.css'
               </div>
               </ModalBody>
               <ModalFooter>
-              <button type="submit" className="btn btn-warning btn-block" onClick={this.handleLogin}><b style={{color: '#fff'}}>Login</b></button> 
+              <button type="submit" className="btn btn-primary btn-block" onClick={this.handleLogin}>Login</button> 
               <p className="forgot-password text-right">
                   Forgot <a href="#">password?</a>
               </p>
