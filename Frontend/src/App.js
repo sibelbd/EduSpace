@@ -4,6 +4,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Home from './Pages/Home'
 import Register from './Pages/Register'
 import './App.css';
+import Dashboard from './Pages/Dashboard';
 
 const App = ({location}) => { 
   const currentKey = location.pathname.split('/')[1] || '/'
@@ -17,7 +18,8 @@ const App = ({location}) => {
           <section className="route-section">
           <Switch location={location}>
           <Route exact path='/' component={Home} />
-          <Route exact path='/register' component={Register} />
+          <Route exact path='/register' component={Register}/>
+          <Route exact path='/dashboard' component={Dashboard}/>
         </Switch>
         </section>
         </CSSTransition>

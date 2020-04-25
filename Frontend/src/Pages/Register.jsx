@@ -9,7 +9,12 @@ class Register extends Component {
         super(props);
         this.state = { 
             userType: 'Student',
-            rSelected: 1
+            rSelected: 1,
+            email: "",
+            password: "",
+            passwordConfirm: "",
+            FirstName:"",
+            LastName:""
          }
     }
 
@@ -35,36 +40,36 @@ class Register extends Component {
                 <Button color="primary" onClick={()=>this.toggleTab(1)} active={this.state.rSelected === 1}>Student</Button>
                 <Button color="primary" onClick={()=>this.toggleTab(2)} active={this.state.rSelected === 2}>Professor</Button>
                 </ButtonGroup>
-            <div class="card-body">
-            <h5 class="card-title text-center">Register as a {this.state.userType}</h5>
-            <form class="form-signin">
-              <div class="form-label-group">
+            <div className="card-body">
+            <h5 className="card-title text-center">Register as a {this.state.userType}</h5>
+            <form id = "register-form" className="form-signin">
+              <div className="form-label-group">
                 <input type="text" id="inputUserame" class="form-control" placeholder="First Name" required autofocus/>
                 <label for="inputUserame">First Name</label>
               </div>
-              <div class="form-label-group">
+              <div className="form-label-group">
                 <input type="text" id="inputUserame" class="form-control" placeholder="Last Name" required autofocus/>
                 <label for="inputUserame">Last Name</label>
               </div>
 
-              <div class="form-label-group">
+              <div className="form-label-group">
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required/>
                 <label for="inputEmail">Email address</label>
               </div>
               
               <hr/>
 
-              <div class="form-label-group">
+              <div className="form-label-group">
                 <input type="password" id="inputPassword" class="form-control" placeholder="Password" required/>
                 <label for="inputPassword">Password</label>
               </div>
               
-              <div class="form-label-group">
+              <div className="form-label-group">
                 <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required/>
                 <label for="inputConfirmPassword">Confirm password</label>
               </div>
 
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
+              <button className="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
             
             </form>
             </div>

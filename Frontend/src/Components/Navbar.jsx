@@ -7,7 +7,9 @@ import './Navbar.css'
       constructor(props) {
           super(props)
           this.state = {
-              showLoginModal: false
+              showLoginModal: false,
+              isLoggedIn: false,
+              isProf: false
           }
       }
 
@@ -26,6 +28,12 @@ import './Navbar.css'
 
                   <ul className="navbar-nav ml-auto">
                     <li className="navbar-item">
+                        <a className="nav-link" href='/dashboard'>Dashboard</a>
+                    </li>
+                    <li className="navbar-item">
+                        <a className="nav-link disabled" href='/calendar'>Calendar</a>
+                    </li>
+                    <li className="navbar-item">
                         <button id="pink-button" className="btn btn-outline-primary" type="button" onClick={this.toggleLoginModal}>Login</button>
                     </li>
                   </ul>
@@ -35,12 +43,12 @@ import './Navbar.css'
               <ModalHeader toggle={this.toggle}><div className="loginModal">Sign In</div></ModalHeader>
               <ModalBody >
               <div className="form-label-group"> 
-                   <label for="email">Email address</label>
+                   <label className="login-label" for="email">Email address</label>
                    <input id="email" type="email" className="form-control" placeholder="Enter email" required autoFocus/>
               </div>
-        
+        <br></br>
               <div className="form-label-group">
-                  <label for="passwd">Password</label>
+                  <label className="login-label"for="passwd">Password</label>
                   <input id="passwd" type="password" className="form-control" placeholder="Enter password" required/>
                   { this.state.failedLogin ?
                    <div><br></br><div style={{color: 'red', textAlign: 'center'}}>Incorrect credentials</div></div> : null }
