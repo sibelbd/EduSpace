@@ -1,0 +1,26 @@
+.page-layout{
+    display: grid;
+    width: 100%;
+    
+}
+
+
+.page-layout-context {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.left-align-content {
+    width: 1600px;
+}
+
+@media screen and (max-width: 1600px) {
+    .left-align-content{
+        width: 100vw
+    }
+}
+
+.page-layout-content {
+    width: 100%;
+    margin: 0;
+}

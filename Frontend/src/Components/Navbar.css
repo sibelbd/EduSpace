@@ -1,0 +1,19 @@
+.navbar-brand{
+    font-weight: bold;
+    color:#ffff !important;
+}
+
+.navbar-pink {
+    background-color: #f788cf;
+}
+
+#pink-button.btn-outline-primary{
+    border-color: white;
+    color: white;
+}
+
+#pink-button.btn-outline-primary:hover{
+    border-color: white;
+    color:#f788cf;
+    background-color: white;
+}

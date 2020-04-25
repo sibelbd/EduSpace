@@ -1,0 +1,18 @@
+.top-home{
+    background-color: #f788cf;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    padding: 1.5rem 0.75rem;
+    overflow: hidden;
+}
+.row {
+    margin-top: 5.25%;
+}
+.digital{
+    padding-top: 1.5rem;
+}
+
+.top-line{
+    width: 75%;
+}
