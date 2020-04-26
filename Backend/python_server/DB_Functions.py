@@ -7,9 +7,9 @@ from flask import Flask
 class DB_Connector:
 
 
-    # def main(self):
-    #     conn = DB_Connection().client
-    #
+    def main(self):
+        conn = DB_Connection().client
+
     #
     #     # Issue the serverStatus command and print the results
     #     serverStatusResult = conn.admin.command("serverStatus")
