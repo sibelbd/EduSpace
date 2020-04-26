@@ -3,9 +3,11 @@
 
 ## About
 A unique classroom platform with an emphasis on community and peer to peer collaboration. 
+![logo](images/logo.png)
 
 
 ## Developers and Researchers
-* [Sulbha Aggarwal](https://github.com/SulbhaAgg) [https://github.com/SulbhaAgg]
+* [Sulbha Aggarwal](https://github.com/SulbhaAgg) [Queens College]
 * [Sibel DeShong](https://github.com/sibelbd) [Western Governer University]
-* [Shreyan Mohanty](Uc Davis) [Uc Davis]
+* Shreyan Mohanty [Uc davis]
+* Rupakshi Aggarwal
