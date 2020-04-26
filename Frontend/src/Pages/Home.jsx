@@ -20,7 +20,7 @@ class Home extends Component {
                <br></br>
                <a id="pink-button" className="btn btn-outline-primary" href="/register">Sign Up</a>
            </div>
-          <div className="container">
+          <div className="home container">
           <div className="row">
           <div className="col">
             <img style = {{float:'left'}} className="rounded-circle" src="https://tophat.com/wp-content/themes/TOPHAT01/img/home/home-problem-icon-cost.svg" alt="Money Icons" width="120" height="120"/>

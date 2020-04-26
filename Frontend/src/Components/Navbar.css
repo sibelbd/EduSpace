@@ -4,7 +4,7 @@
 }
 
 .navbar-pink {
-    background-color: #f788cf;
+    background-color: #353c48;
 }
 
 #pink-button.btn-outline-primary{
@@ -18,3 +18,7 @@
     background-color: white;
 }
 
+.input-text.form-control {
+    margin-left: 5%;
+    width: 80%
+}
