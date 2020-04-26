@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- BEGIN HEAD -->
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="description" content="Prefessor Side" />
+	<meta name="author" content="eduSpace" />
+	<title>eduSpace</title>
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
+	<!-- icons -->
+	<link href="fonts/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+	<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="fonts/material-design-icons/material-icon.css" rel="stylesheet" type="text/css" />
+	<!--bootstrap -->
+	<link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/plugins/summernote/summernote.css" rel="stylesheet">
+	<!-- Material Design Lite CSS -->
+	<link rel="stylesheet" href="../assets/plugins/material/material.min.css">
+	<link rel="stylesheet" href="../assets/css/material_style.css">
+	<!-- inbox style -->
+	<link href="../assets/css/pages/inbox.min.css" rel="stylesheet" type="text/css" />
+	<!-- Theme Styles -->
+	<link href="../assets/css/theme/dark/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
+	<link href="../assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/theme/dark/style.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/responsive.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/theme/dark/theme-color.css" rel="stylesheet" type="text/css" />
+	<!-- favicon -->
+</head>
+<!-- END HEAD -->
+
+<body
+	class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-dark dark-sidebar-color logo-dark dark-theme">
+	<div class="page-wrapper">
+		<!-- start header -->
+		<div class="page-header navbar navbar-fixed-top">
+			<div class="page-header-inner ">
+				<!-- logo start -->
+				<div class="page-logo">
+					<a href="index.html">
+						<i class="fa fa-graduation-cap" aria-hidden="true" style= "color:white;"></i>
+						<span class="logo-default">eduSpace</span> </a>
+				</div>
+				<!-- logo end -->
+				<form class="search-form-opened" action="#" method="GET">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search..." name="query">
+						<span class="input-group-btn">
+							<a href="javascript:;" class="btn submit">
+								<i class="icon-magnifier"></i>
+							</a>
+						</span>
+					</div>
+				</form>
+				<!-- start mobile menu -->
+				<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span></span>
+				</a>
+				<!-- end mobile menu -->
+				<!-- start header menu -->
+				<div class="top-menu">
+					<ul class="nav navbar-nav pull-right">
+
+						<!-- start manage user dropdown -->
+						<li class="dropdown dropdown-user">
+							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+								data-close-others="true">
+								<img alt="" class="img-circle " src="../assets/img/dp.jpg" />
+								<span class="username username-hide-on-mobile"></span>
+								<i class="fa fa-angle-down"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-default">
+								<li>
+									<a href="login.html">
+										<i class="icon-logout"></i> Log Out </a>
+								</li>
+							</ul>
+						</li>
+						<!-- end manage user dropdown -->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end header -->
+		<!-- start page container -->
+		<div class="page-container">
+			<!-- start sidebar menu -->
+			<div class="sidebar-container">
+				<div class="sidemenu-container navbar-collapse collapse fixed-menu">
+					<div id="remove-scroll" class="left-sidemenu">
+						<ul class="sidemenu  page-header-fixed slimscroll-style" data-keep-expanded="false"
+							data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+							<li class="sidebar-toggler-wrapper hide">
+								<div class="sidebar-toggler">
+									<span></span>
+								</div>
+							</li>
+							<li class="sidebar-user-panel">
+								<div class="user-panel">
+									<div class="pull-left image">
+										<img src="../assets/img/dp.jpg" class="img-circle user-img-circle"
+											alt="User Image" />
+									</div>
+									<div class="pull-left info">
+										<p> Lawrence Teitelman</p>
+										<a href="#"><i class="fa fa-circle user-online"></i><span class="txtOnline">
+												Online</span></a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="index.html" class="nav-link nav-toggle"> <i
+										class="material-icons">dashboard</i>
+									<span class="title">Overall Statistics</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link nav-toggle"> <i class="material-icons">assignment</i>
+									<span class="title">Assign</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link nav-toggle"> <i class="fa fa-book"></i>
+									<span class="title">Grade</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link nav-toggle"> <i class="fa fa-video-camera"></i>
+									<span class="title">Start Session</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end sidebar menu -->
+			<!-- start page content -->
+			<div class="page-content-wrapper">
+				<div class="page-content">
+					<div class="page-bar">
+						<div class="page-title-breadcrumb">
+							<div class=" pull-left">
+								<div class="page-title">Performance</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- chart start -->
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="card card-box">
+								<div class="card-head">
+									<header>Class Performance</header>
+									<div class="tools">
+										<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
+										<a class="t-collapse btn-color fa fa-chevron-down" href="javascript:;"></a>
+										<a class="t-close btn-color fa fa-times" href="javascript:;"></a>
+									</div>
+								</div>
+								<div class="card-body no-padding height-9">
+									<div class="row">
+										<canvas id="canvas1"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="card card-box">
+								<div class="card-head">
+									<header>Overall Performance</header>
+									<div class="tools">
+										<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
+										<a class="t-collapse btn-color fa fa-chevron-down" href="javascript:;"></a>
+										<a class="t-close btn-color fa fa-times" href="javascript:;"></a>
+									</div>
+								</div>
+								<div class="card-body no-padding height-9">
+									<div class="row">
+										<canvas id="chartjs_pie"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Chart end -->
+					<div class="row">
+						<div class="col-lg-6 col-md-12 col-sm-12 col-12">
+							<div class="card-box">
+								<div class="card-head">
+									<header>Exam 2 Toppers</header>
+								</div>
+								<div class="card-body ">
+									<div class="table-responsive">
+										<table class="table table-striped custom-table table-hover">
+											<thead>
+												<tr>
+													<th>Student Id</th>
+													<th>Name</th>
+													<th>Score</th>
+													<th>Action</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>23924418</td>
+													<td>Sulbha Aggarwal</td>
+													<td>
+														100/100
+													</td>
+													<td><a href="javascript:void(0)" class="" data-toggle="tooltip"
+															title="Edit">
+															<i class="fa fa-check"></i></a>
+														<a href="javascript:void(0)" class="text-inverse" title="Delete"
+															data-toggle="tooltip">
+															<i class="fa fa-trash"></i></a>
+													</td>
+												</tr>
+												<tr>
+													<td>23945864</td>
+													<td>Rupakshi Aggarwal</td>
+													<td>
+														<div id="sparkline1"></div>
+														98/100
+													</td>
+													<td><a href="javascript:void(0)" class="" data-toggle="tooltip"
+															title="Edit">
+															<i class="fa fa-check"></i></a>
+														<a href="javascript:void(0)" class="text-inverse" title="Delete"
+															data-toggle="tooltip">
+															<i class="fa fa-trash"></i></a>
+													</td>
+												</tr>
+												<tr>
+													<td>24537894</td>
+													<td>Sarah Smith</td>
+													<td>
+														95/100
+													</td>
+													<td><a href="javascript:void(0)" class="" data-toggle="tooltip"
+															title="Edit">
+															<i class="fa fa-check"></i></a>
+														<a href="javascript:void(0)" class="text-inverse" title="Delete"
+															data-toggle="tooltip">
+															<i class="fa fa-trash"></i></a>
+													</td>
+												</tr>
+												<tr>
+													<td>23924675</td>
+													<td>John Deo</td>
+													<td>
+														92/100
+													</td>
+													<td><a href="javascript:void(0)" class="" data-toggle="tooltip"
+															title="Edit">
+															<i class="fa fa-check"></i></a>
+														<a href="javascript:void(0)" class="text-inverse" title="Delete"
+															data-toggle="tooltip">
+															<i class="fa fa-trash"></i></a>
+													</td>
+												</tr>
+												<tr>
+													<td>24561234</td>
+													<td>Jay Soni</td>
+													<td>
+														90/100
+													</td>
+													<td><a href="javascript:void(0)" class="" data-toggle="tooltip"
+															title="Edit">
+															<i class="fa fa-check"></i></a>
+														<a href="javascript:void(0)" class="text-inverse" title="Delete"
+															data-toggle="tooltip">
+															<i class="fa fa-trash"></i></a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Activity feed start -->
+						<div class="col-lg-6 col-md-12 col-sm-12 col-12">
+							<div class="card-box">
+								<div class="card-head">
+									<header>Class Comments</header>
+									<button id="feedMenu" class="mdl-button mdl-js-button mdl-button--icon pull-right"
+										data-upgraded=",MaterialButton">
+										<i class="material-icons">more_vert</i>
+									</button>
+									<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+										data-mdl-for="feedMenu">
+										<li class="mdl-menu__item"><i class="material-icons">assistant_photo</i>Action
+										</li>
+										<li class="mdl-menu__item"><i class="material-icons">print</i>Another action
+										</li>
+										<li class="mdl-menu__item"><i class="material-icons">favorite</i>Something else
+											here</li>
+									</ul>
+								</div>
+								<div class="card-body ">
+									<ul class="feedBody">
+										<li class="active-feed">
+											<div class="feed-user-img">
+												<img src="../assets/img/std/std1.jpg" class="img-radius "
+													alt="User-Profile-Image">
+											</div>
+											<h6>
+												<span class="feedLblStyle lblFileStyle">File</span> Sulbha Aggarwal <small
+													class="text-muted">6
+													hours ago</small>
+											</h6>
+											<p class="m-b-15 m-t-15">
+												hii Prof, I have upload doc related to homework#6.
+											</p>
+										</li>
+										<li class="diactive-feed">
+											<div class="feed-user-img">
+												<img src="../assets/img/std/std2.jpg" class="img-radius "
+													alt="User-Profile-Image">
+											</div>
+											<h6>
+												<span class="feedLblStyle lblTaskStyle">Task </span> Rupakshi Aggarwal <small
+													class="text-muted">5
+													hours
+													ago</small>
+											</h6>
+											<p class="m-b-15 m-t-15">
+												Please do as specify in project 2 doc. Let me know if you have any question.
+											</p>
+										</li>
+										<li class="diactive-feed">
+											<div class="feed-user-img">
+												<img src="../assets/img/std/std3.jpg" class="img-radius "
+													alt="User-Profile-Image">
+											</div>
+											<h6>
+												<span class="feedLblStyle lblCommentStyle">comment</span> Sanchit
+												Gupta<small class="text-muted">6 hours ago</small>
+											</h6>
+											<p class="m-b-15 m-t-15">
+												Hey, when is assignment 4 is due?
+											</p>
+										</li>
+										<li class="active-feed">
+											<div class="feed-user-img">
+												<img src="../assets/img/std/std4.jpg" class="img-radius "
+													alt="User-Profile-Image">
+											</div>
+											<h6>
+												<span class="feedLblStyle lblReplyStyle">Reply</span> David Brown
+												<small class="text-muted">7 hours ago</small>
+											</h6>
+											<p class="m-b-15 m-t-15">
+												It should be on you eduSpace, it's due on April 30th.
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Activity feed end -->
+					</div>
+				</div>
+			</div>
+			<!-- end page content -->
+		</div>
+		<!-- end page container -->
+	</div>
+	<!-- start js include path -->
+	<script src="../assets/plugins/jquery/jquery.min.js"></script>
+	<script src="../assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+	<!-- bootstrap -->
+	<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../assets/plugins/sparkline/jquery.sparkline.js"></script>
+	<!-- Common js-->
+	<script src="../assets/js/app.js"></script>
+	<!-- material -->
+	
+	<!-- chart js -->
+	<script src="../assets/plugins/chart-js/Chart.bundle.js"></script>
+	<script src="../assets/plugins/chart-js/utils.js"></script>
+	<script src="../assets/js/pages/chart/chartjs/home-data.js"></script>
+	<!-- summernote -->
+
+	
+	<!-- end js include path -->
+</body>
+
+</html>
