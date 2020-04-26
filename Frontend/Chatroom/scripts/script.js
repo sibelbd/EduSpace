@@ -11,7 +11,7 @@ let handleFail = function(err){
 
 //Queries the container in which the remote feeds belong
 let remoteContainer = document.getElementById("remote-container");
-let canvasContainter = document.getElementById("canvas-containter");
+let canvasContainer = document.getElementById("canvas-container");
 
 /**
 * @name addVideoStream
@@ -43,7 +43,7 @@ function removeVideoStream(evt) {
 * @param streamId
 * @description Helper function to render the video stream to a canvas
 */
-funciton addCanvas(streamId) {
+function addCanvas(streamId) {
 	let video = document.getElementById('video${streamId}');
 	let canvas = document.createElement("canvas");
 	canvasContainer.appendChild(canvas);
@@ -101,3 +101,4 @@ client.join(null, 'agora-classroom', null, (uid)=>{
 		client.on('stream-removed', removeVideoStream);
 	}, handleFail)
 }, handleFail);
+
