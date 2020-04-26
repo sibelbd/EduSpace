@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- BEGIN HEAD -->
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="description" content="Prefessor Side" />
+	<meta name="author" content="eduSpace" />
+	<title>eduSpace</title>
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
+	<!-- icons -->
+	<link href="fonts/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+	<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="fonts/material-design-icons/material-icon.css" rel="stylesheet" type="text/css" />
+	<!--bootstrap -->
+	<link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/plugins/summernote/summernote.css" rel="stylesheet">
+	<!-- Material Design Lite CSS -->
+	<link rel="stylesheet" href="../assets/plugins/material/material.min.css">
+	<link rel="stylesheet" href="../assets/css/material_style.css">
+	<!-- inbox style -->
+	<link href="../assets/css/pages/inbox.min.css" rel="stylesheet" type="text/css" />
+	<!-- Theme Styles -->
+	<link href="../assets/css/theme/dark/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
+	<link href="../assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/theme/dark/style.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/responsive.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/theme/dark/theme-color.css" rel="stylesheet" type="text/css" />
+	<!-- favicon -->
+	<link rel="shortcut icon" href="../assets/img/favicon.ico" />
+</head>
+<!-- END HEAD -->
+
+<body
+	class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-dark dark-sidebar-color logo-dark dark-theme">
+	<div class="page-wrapper">
+		<!-- start header -->
+		<div class="page-header navbar navbar-fixed-top">
+			<div class="page-header-inner ">
+				<!-- logo start -->
+				<div class="page-logo">
+					<a href="index.html">
+						<i class="fa fa-graduation-cap" aria-hidden="true" style="color:white;"></i>
+						<span class="logo-default">eduSpace</span> </a>
+				</div>
+				<!-- logo end -->
+				<form class="search-form-opened" action="#" method="GET">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search..." name="query">
+						<span class="input-group-btn">
+							<a href="javascript:;" class="btn submit">
+								<i class="icon-magnifier"></i>
+							</a>
+						</span>
+					</div>
+				</form>
+				<!-- start mobile menu -->
+				<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span></span>
+				</a>
+				<!-- end mobile menu -->
+				<!-- start header menu -->
+				<div class="top-menu">
+					<ul class="nav navbar-nav pull-right">
+
+						<!-- start manage user dropdown -->
+						<li class="dropdown dropdown-user">
+							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+								data-close-others="true">
+								<img alt="" class="img-circle " src="../assets/img/dp.jpg" />
+								<span class="username username-hide-on-mobile"></span>
+								<i class="fa fa-angle-down"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-default">
+								<li>
+									<a href="login.html">
+										<i class="icon-logout"></i> Log Out </a>
+								</li>
+							</ul>
+						</li>
+						<!-- end manage user dropdown -->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end header -->
+		<!-- start page container -->
+		<div class="page-container">
+			<!-- start sidebar menu -->
+			<div class="sidebar-container">
+				<div class="sidemenu-container navbar-collapse collapse fixed-menu">
+					<div id="remove-scroll" class="left-sidemenu">
+						<ul class="sidemenu  page-header-fixed slimscroll-style" data-keep-expanded="false"
+							data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+							<li class="sidebar-toggler-wrapper hide">
+								<div class="sidebar-toggler">
+									<span></span>
+								</div>
+							</li>
+							<li class="sidebar-user-panel">
+								<div class="user-panel">
+									<div class="pull-left image">
+										<img src="../assets/img/dp.jpg" class="img-circle user-img-circle"
+											alt="User Image" />
+									</div>
+									<div class="pull-left info">
+										<p> Lawrence Teitelman</p>
+										<a href="#"><i class="fa fa-circle user-online"></i><span class="txtOnline">
+												Online</span></a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="index.html" class="nav-link nav-toggle"> <i
+										class="material-icons">dashboard</i>
+									<span class="title">Overall Statistics</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link nav-toggle"> <i class="material-icons">assignment</i>
+									<span class="title">Assign</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="quizmaker.html" class="nav-link nav-toggle"> <i class="fas fa-pen-fancy"></i>
+									<span class="title">Create Quiz</span>
+								</a>
+							</li>
+							<li class="nav-item active">
+								<a href="grade.html" class="nav-link nav-toggle"> <i class="fa fa-book"></i>
+									<span class="title">Grade</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="" class="nav-link nav-toggle"> <i class="fa fa-video-camera"></i>
+									<span class="title">Start Session</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end sidebar menu -->
+			<!-- start page content -->
+			<div class="page-content-wrapper">
+				<div class="page-content">
+					<div class="page-bar">
+						<div class="page-title-breadcrumb">
+							<div class=" pull-left">
+								<div class="page-title">Grades</div>
+							</div>
+							<ol class="breadcrumb page-breadcrumb pull-right">
+								<li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
+										href="index.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="active">Grade</li>
+							</ol>
+						</div>
+					</div>
+					<!-- start student grades list -->
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="card card-box">
+								<div class="card-head">
+									<header>Student Grades List</header>
+								</div>
+								<div class="card-body ">
+									<div class="table-wrap">
+										<div class="table-responsive">
+											<table class="table display product-overview mb-30" id="support_table">
+												<thead>
+													<tr>
+														<th>Student_ID</th>
+														<th>Name</th>
+														<th>Details</th>
+														<th>Grade</th>
+														<th>Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>1</td>
+														<td>Sanchit Gupta</td>
+														<td>Exam #2</td>
+														<td>A+</td>
+														<td>
+															<button class="btn btn-success btn-xs">
+																<i class="fa fa-pencil"></i>
+															</button>
+															<button class="btn btn-danger btn-xs">
+																<i class="fa fa-trash-o "></i>
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>Sulbha Aggarwal</td>
+														<td>Exam #2</td>
+														<td>A</td>
+														<td>
+															<button class="btn btn-success btn-xs">
+																<i class="fa fa-pencil"></i>
+															</button>
+															<button class="btn btn-danger btn-xs">
+																<i class="fa fa-trash-o "></i>
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>Rupakshi Aggarwal</td>
+														<td>Exam #2</td>
+														<td>A+</td>
+														<td>
+															<button class="btn btn-success btn-xs">
+																<i class="fa fa-pencil"></i>
+															</button>
+															<button class="btn btn-danger btn-xs">
+																<i class="fa fa-trash-o "></i>
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td>4</td>
+														<td>Jens Brincker</td>
+														<td>Exam #2</td>
+														<td>B</td>
+														<td>
+															<button class="btn btn-success btn-xs">
+																<i class="fa fa-pencil"></i>
+															</button>
+															<button class="btn btn-danger btn-xs">
+																<i class="fa fa-trash-o "></i>
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td>5</td>
+														<td>James</td>
+														<td>Exam #2</td>
+														<td>B+</td>
+														<td>
+															<button class="btn btn-success btn-xs">
+																<i class="fa fa-pencil"></i>
+															</button>
+															<button class="btn btn-danger btn-xs">
+																<i class="fa fa-trash-o "></i>
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td>6</td>
+														<td>Samuel</td>
+														<td>Exam #2</td>
+														<td>C+</td>
+														<td>
+															<button class="btn btn-success btn-xs">
+																<i class="fa fa-pencil"></i>
+															</button>
+															<button class="btn btn-danger btn-xs">
+																<i class="fa fa-trash-o "></i>
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td>7</td>
+														<td>Shawn</td>
+														<td>Exam #2</td>
+														<td>B</td>
+														<td>
+															<button class="btn btn-success btn-xs">
+																<i class="fa fa-pencil"></i>
+															</button>
+															<button class="btn btn-danger btn-xs">
+																<i class="fa fa-trash-o "></i>
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td>8</td>
+														<td>Chris Brown</td>
+														<td>Exam #2</td>
+														<td>A+</td>
+														<td>
+															<button class="btn btn-success btn-xs">
+																<i class="fa fa-pencil"></i>
+															</button>
+															<button class="btn btn-danger btn-xs">
+																<i class="fa fa-trash-o "></i>
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td>9</td>
+														<td>Charlie</td>
+														<td>Exam #2</td>
+														<td>C</td>
+														<td>
+															<button class="btn btn-success btn-xs">
+																<i class="fa fa-pencil"></i>
+															</button>
+															<button class="btn btn-danger btn-xs">
+																<i class="fa fa-trash-o "></i>
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td>10</td>
+														<td>Mary Kom</td>
+														<td>Exam #2</td>
+														<td>A</td>
+														<td>
+															<button class="btn btn-success btn-xs">
+																<i class="fa fa-pencil"></i>
+															</button>
+															<button class="btn btn-danger btn-xs">
+																<i class="fa fa-trash-o "></i>
+															</button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end student grades list -->
+				</div>
+			</div>
+			<!-- end page content -->
+		</div>
+		<!-- end page container -->
+	</div>
+	<!-- start js include path -->
+	<script src="../assets/plugins/jquery/jquery.min.js"></script>
+	<script src="../assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+	<!-- bootstrap -->
+	<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../assets/plugins/sparkline/jquery.sparkline.js"></script>
+	<!-- Common js-->
+	<script src="../assets/js/app.js"></script>
+	<!-- material -->
+
+	<!-- chart js -->
+	<script src="../assets/plugins/chart-js/Chart.bundle.js"></script>
+	<script src="../assets/plugins/chart-js/utils.js"></script>
+	<script src="../assets/js/pages/chart/chartjs/home-data.js"></script>
+	<!-- summernote -->
+	<script src="https://kit.fontawesome.com/f004f1adc5.js" crossorigin="anonymous"></script>
+
+	<!-- end js include path -->
+</body>
+
+</html>
