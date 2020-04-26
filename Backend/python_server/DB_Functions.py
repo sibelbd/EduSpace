@@ -1,14 +1,14 @@
 # pprint library is used to make the output look more pretty
 from pprint import pprint
-from Backend.python_server import DB_Connection
+from Backend.python_server.DB_Connection import DB_Connection
 import logging
 from flask import Flask
 
-class DB_Connector:
+class DB_Functions:
 
 
     def main(self):
-        conn = DB_Connection().client
+       conn = DB_Connection().client
 
     #
     #     # Issue the serverStatus command and print the results
