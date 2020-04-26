@@ -3,6 +3,7 @@ import Page from '../Components/Page'
 import './Register.css'
 import { Button, ButtonGroup } from 'reactstrap';
 import 'react-tabs/style/react-tabs.css';
+import axios from 'axios'
 
 class Register extends Component {
     constructor(props) {
@@ -14,7 +15,8 @@ class Register extends Component {
             password: "",
             passwordConfirm: "",
             FirstName:"",
-            LastName:""
+            LastName:"",
+            SID:""
          }
     }
 
@@ -33,6 +35,30 @@ class Register extends Component {
         }
     }
 
+    register = () => {
+        axios.post('url',{
+            email: this.state.email,
+            password: this.state.password,
+            firstName: this.state.FirstName,
+            lastName: this.state.LastName,
+            SID: this.state.SID,
+            userType: this.state.userType
+        }
+        ).then(response=>{
+            console.log(response)
+        }).catch(error=>{
+            console.log(error)
+        });
+        
+    }
+
+    handleChange = event => {
+        const {name, value} = event.target
+        this.setState({
+            [name]: value
+        })
+    }
+
     render() { 
         const content = ( 
             <div className="register container card-signin">
@@ -41,16 +67,21 @@ class Register extends Component {
                 <Button color="primary" onClick={()=>this.toggleTab(2)} active={this.state.rSelected === 2}>Professor</Button>
                 </ButtonGroup>
             <div className="card-body">
-            <h5 className="card-title text-center">Register as a {this.state.userType}</h5>
+            <h5 className="card-title text-center" style={{color:"whitesmoke"}}>Register as a {this.state.userType}</h5>
             <form id = "register-form" className="form-signin">
               <div className="form-label-group">
                 <input type="text" id="inputUserame" class="form-control" placeholder="First Name" required autofocus/>
                 <label for="inputUserame">First Name</label>
               </div>
               <div className="form-label-group">
-                <input type="text" id="inputUserame" class="form-control" placeholder="Last Name" required autofocus/>
-                <label for="inputUserame">Last Name</label>
+                <input type="text" id="inputLastName" class="form-control" placeholder="Last Name" required autofocus/>
+                <label for="inputLastName">Last Name</label>
               </div>
+
+              {this.state.rSelected === 1 ? <div className="form-label-group">
+                <input type="text" id="inputSID" class="form-control" placeholder="Student ID" required autofocus/>
+                <label for="inputSID">Student ID</label>
+              </div> :null }
 
               <div className="form-label-group">
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required/>
@@ -69,7 +100,7 @@ class Register extends Component {
                 <label for="inputConfirmPassword">Confirm password</label>
               </div>
 
-              <button className="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
+              <button className="btn btn-lg btn-primary btn-block text-uppercase" type="submit" onClick={this.register}>Register</button>
             
             </form>
             </div>

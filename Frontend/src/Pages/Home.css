@@ -1,5 +1,5 @@
 .top-home{
-    background-color: #f788cf;
+    background-color: #353c48;
     color: white;
     margin-top: 50px;
     text-align: center;
@@ -15,4 +15,8 @@
 
 .top-line{
     width: 75%;
+}
+
+.home.container{
+    background-color: transparent;
 }

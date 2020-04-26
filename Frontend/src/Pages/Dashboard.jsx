@@ -11,32 +11,14 @@ class DashboardProf extends Component {
     render() { 
         const content = ( 
             <div id='courseList' className="container shadow">
-                <h3>Your Courses:</h3>
+                <h3 style={{color:"whitesmoke"}}>Your Courses:</h3>
                 <Row>
                 <Col sm="4">
                 <Card>
-                <CardHeader>ECS 120</CardHeader>
+                <CardHeader>Class Code</CardHeader>
                 <CardBody>
-                <CardTitle>Theory of Computation</CardTitle>
-                <Button color ="info">View</Button>
-                </CardBody>
-                </Card>
-                </Col>
-                <Col sm="4">
-                <Card>
-                <CardHeader>MAT 22B</CardHeader>
-                <CardBody>
-                <CardTitle>Differential Equations</CardTitle>
-                <Button color="info">View</Button>
-                </CardBody>
-                </Card>
-                </Col>
-                <Col sm="4">
-                <Card>
-                <CardHeader>PHY 9D</CardHeader>
-                <CardBody>
-                <CardTitle>Modern Physics</CardTitle>
-                <Button color="info">View</Button>
+                <CardTitle>Class Name</CardTitle>
+                <a className="btn btn-secondary" href='/course/1'>View</a>
                 </CardBody>
                 </Card>
                 </Col>

@@ -1,0 +1,49 @@
+.sidebar{
+    margin-top: 50px;
+    height: calc(100vh);
+    background-color: #353c48;
+    width: 15%;
+    color: rgb(180, 179, 179);
+    position: fixed;
+    overflow: auto;
+    float: left;
+    padding-left: 1.5rem;
+    padding-top: 3rem;
+}
+
+.flex-column .nav-item{
+    padding-bottom: 1rem;
+}
+
+.flex-column .nav-item:hover{
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.main-page{
+    margin-top: 60px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    width: 85%;
+    height: auto;
+    float: right;
+    color: whitesmoke;
+}
+
+.table-div{
+    color: whitesmoke;
+    border: thin gray 2px;
+    border-radius: 20px;
+}
+
+.performance{
+    width: 50%;
+    margin-top: 5%;
+    padding: 1rem;
+    background-color: #353c48;
+    margin-right: 2%;
+}
+
+.rounded-circle{
+    margin-left: 2rem;
+}
